@@ -4,11 +4,11 @@ const url = require('url');
 const qs = require('qs');
 
 const server = http.createServer((req, res) => {
-    let urlParse = url.parse(req.url, true);
-    let pathName = urlParse.pathname; // /edit/2
+    let urlParse = url.parse(req.url, true);//phân tích cú pháp trả về đối tượng
+    let pathName = urlParse.pathname; //
     let arrPath = pathName.split('/');
     let trimPath = arrPath[1];
-    console.log(trimPath);
+
     let chosenHandler;
     if (typeof router[trimPath] === "undefined") {
         chosenHandler = handlers.notFound
@@ -19,6 +19,8 @@ const server = http.createServer((req, res) => {
 })
 
 let handlers = {};
+
+
 handlers.home = (req, res) => {
     let usersHtml = '';
     fs.readFile('./data/users.json', 'utf-8', (err, users) => {
@@ -34,6 +36,8 @@ handlers.home = (req, res) => {
         })
     })
 }
+
+
 handlers.notFound = (req, res) => {
     fs.readFile('./views/notFound.html', 'utf-8', (err, data) => {
         res.writeHead(200, 'text/html');
@@ -81,6 +85,7 @@ handlers.login = function (req, res) {
         })
     }
 }
+
 handlers.register = function (req, res) {
     if (req.method === "GET") {
         fs.readFile('./views/register.html', 'utf-8', (err, data) => {
@@ -142,17 +147,20 @@ handlers.edit = function (req, res, index) {
         res.end();
     }
 }
+
 handlers.delete = function (req, res, index) {
-    let users = []
+    let users = [];
     fs.readFile('./data/users.json', 'utf-8', (err, usersJson) => {
         users = JSON.parse(usersJson);
         for (let i = 0; i < users.length; i++) {
             if (i === +index) {
                 users.splice(i, 1);
-                break;
+                console.log("xóa thành công")
             }
         }
-        fs.writeFile('./data/users.json', JSON.stringify(users), err => {
+        users = JSON.stringify(users)
+        console.log(users)
+        fs.writeFile('./data/users.json', users, err => {
             res.writeHead(301, {'location': '/home'});
             res.end();
         })
@@ -165,6 +173,7 @@ let router = {
     'edit': handlers.edit,
     'delete': handlers.delete
 }
-server.listen(8080, function () {
+
+server.listen(3000, function () {
     console.log('server running!')
 })
