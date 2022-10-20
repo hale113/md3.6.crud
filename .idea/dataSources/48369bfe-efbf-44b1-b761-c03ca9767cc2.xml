@@ -1076,227 +1076,301 @@ sys|schema||mysql.sys|localhost|TRIGGER|G</Grants>
       <Engine>InnoDB</Engine>
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </table>
-    <view id="311" parent="289" name="mg">
+    <view id="311" parent="289" name="giasp">
+      <Definer>root@localhost</Definer>
+      <SourceTextLength>131</SourceTextLength>
+    </view>
+    <view id="312" parent="289" name="giatrihoadon">
+      <Definer>root@localhost</Definer>
+      <SourceTextLength>441</SourceTextLength>
+    </view>
+    <view id="313" parent="289" name="mg">
       <Definer>root@localhost</Definer>
       <SourceTextLength>244</SourceTextLength>
     </view>
-    <view id="312" parent="289" name="mg1">
+    <view id="314" parent="289" name="mg1">
       <Definer>root@localhost</Definer>
       <SourceTextLength>244</SourceTextLength>
     </view>
-    <view id="313" parent="289" name="mg2">
+    <view id="315" parent="289" name="mg2">
       <Definer>root@localhost</Definer>
       <SourceTextLength>298</SourceTextLength>
     </view>
-    <view id="314" parent="289" name="mg3">
+    <view id="316" parent="289" name="mg3">
       <Definer>root@localhost</Definer>
       <SourceTextLength>300</SourceTextLength>
     </view>
-    <view id="315" parent="289" name="tl">
+    <view id="317" parent="289" name="spdamua">
+      <Definer>root@localhost</Definer>
+      <SourceTextLength>392</SourceTextLength>
+    </view>
+    <view id="318" parent="289" name="spdm">
+      <Definer>root@localhost</Definer>
+      <SourceTextLength>182</SourceTextLength>
+    </view>
+    <view id="319" parent="289" name="tl">
       <Definer>root@localhost</Definer>
       <SourceTextLength>243</SourceTextLength>
     </view>
-    <view id="316" parent="289" name="tl1">
+    <view id="320" parent="289" name="tl1">
       <Definer>root@localhost</Definer>
       <SourceTextLength>297</SourceTextLength>
     </view>
-    <view id="317" parent="289" name="tl3">
+    <view id="321" parent="289" name="tl3">
       <Definer>root@localhost</Definer>
       <SourceTextLength>299</SourceTextLength>
     </view>
-    <view id="318" parent="289" name="top3p">
+    <view id="322" parent="289" name="tongdonhang">
+      <Definer>root@localhost</Definer>
+      <SourceTextLength>289</SourceTextLength>
+    </view>
+    <view id="323" parent="289" name="top3p">
       <Definer>root@localhost</Definer>
       <SourceTextLength>161</SourceTextLength>
     </view>
-    <column id="319" parent="307" name="id">
+    <column id="324" parent="307" name="id">
       <DataType>int|0s</DataType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="320" parent="307" name="name">
+    <column id="325" parent="307" name="name">
       <DataType>varchar(45)|0s</DataType>
       <Position>2</Position>
     </column>
-    <column id="321" parent="307" name="age">
+    <column id="326" parent="307" name="age">
       <DataType>int|0s</DataType>
       <Position>3</Position>
     </column>
-    <index id="322" parent="307" name="PRIMARY">
+    <index id="327" parent="307" name="PRIMARY">
       <ColNames>id</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <key id="323" parent="307" name="PRIMARY">
+    <key id="328" parent="307" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
-    <column id="324" parent="308" name="id">
+    <column id="329" parent="308" name="id">
       <DataType>int|0s</DataType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="325" parent="308" name="time">
+    <column id="330" parent="308" name="time">
       <DataType>datetime|0s</DataType>
       <Position>2</Position>
     </column>
-    <column id="326" parent="308" name="total">
+    <column id="331" parent="308" name="total">
       <DataType>int|0s</DataType>
       <Position>3</Position>
     </column>
-    <column id="327" parent="308" name="customerId">
+    <column id="332" parent="308" name="customerId">
       <DataType>int|0s</DataType>
       <Position>4</Position>
     </column>
-    <foreign-key id="328" parent="308" name="FK1">
+    <foreign-key id="333" parent="308" name="FK1">
       <ColNames>customerId</ColNames>
       <RefColNames>id</RefColNames>
       <RefTableName>customer</RefTableName>
     </foreign-key>
-    <index id="329" parent="308" name="PRIMARY">
+    <index id="334" parent="308" name="PRIMARY">
       <ColNames>id</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <index id="330" parent="308" name="FK1_idx">
+    <index id="335" parent="308" name="FK1_idx">
       <ColNames>customerId</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="331" parent="308" name="PRIMARY">
+    <key id="336" parent="308" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
-    <column id="332" parent="309" name="orderId">
+    <column id="337" parent="309" name="orderId">
       <DataType>int|0s</DataType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="333" parent="309" name="productId">
+    <column id="338" parent="309" name="productId">
       <DataType>int|0s</DataType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
-    <column id="334" parent="309" name="quantity">
+    <column id="339" parent="309" name="quantity">
       <DataType>int|0s</DataType>
       <Position>3</Position>
     </column>
-    <foreign-key id="335" parent="309" name="Fk">
+    <foreign-key id="340" parent="309" name="Fk">
       <ColNames>orderId</ColNames>
       <RefColNames>id</RefColNames>
       <RefTableName>order</RefTableName>
     </foreign-key>
-    <foreign-key id="336" parent="309" name="Fk2">
+    <foreign-key id="341" parent="309" name="Fk2">
       <ColNames>productId</ColNames>
       <RefColNames>id</RefColNames>
       <RefTableName>product</RefTableName>
     </foreign-key>
-    <index id="337" parent="309" name="PRIMARY">
+    <index id="342" parent="309" name="PRIMARY">
       <ColNames>orderId
 productId</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <index id="338" parent="309" name="Fk2_idx">
+    <index id="343" parent="309" name="Fk2_idx">
       <ColNames>productId</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="339" parent="309" name="PRIMARY">
+    <key id="344" parent="309" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
-    <column id="340" parent="310" name="id">
+    <column id="345" parent="310" name="id">
       <DataType>int|0s</DataType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="341" parent="310" name="name">
+    <column id="346" parent="310" name="name">
       <DataType>varchar(45)|0s</DataType>
       <Position>2</Position>
     </column>
-    <column id="342" parent="310" name="price">
+    <column id="347" parent="310" name="price">
       <DataType>int|0s</DataType>
       <Position>3</Position>
     </column>
-    <column id="343" parent="310" name="quantity">
+    <column id="348" parent="310" name="quantity">
       <DataType>int|0s</DataType>
       <Position>4</Position>
     </column>
-    <index id="344" parent="310" name="PRIMARY">
+    <index id="349" parent="310" name="PRIMARY">
       <ColNames>id</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <key id="345" parent="310" name="PRIMARY">
+    <key id="350" parent="310" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
-    <column id="346" parent="311" name="id">
+    <column id="351" parent="311" name="id">
       <DataType>int|0s</DataType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="347" parent="311" name="time">
-      <DataType>datetime|0s</DataType>
+    <column id="352" parent="311" name="price">
+      <DataType>int|0s</DataType>
       <Position>2</Position>
     </column>
-    <column id="348" parent="312" name="id">
+    <column id="353" parent="312" name="id">
       <DataType>int|0s</DataType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="349" parent="312" name="time">
-      <DataType>datetime|0s</DataType>
+    <column id="354" parent="312" name="name">
+      <DataType>varchar(45)|0s</DataType>
       <Position>2</Position>
     </column>
-    <column id="350" parent="313" name="id">
+    <column id="355" parent="312" name="total">
+      <DataType>decimal(42)|0s</DataType>
+      <Position>3</Position>
+    </column>
+    <column id="356" parent="313" name="id">
       <DataType>int|0s</DataType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="351" parent="313" name="time">
+    <column id="357" parent="313" name="time">
       <DataType>datetime|0s</DataType>
       <Position>2</Position>
     </column>
-    <column id="352" parent="314" name="id">
+    <column id="358" parent="314" name="id">
       <DataType>int|0s</DataType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="353" parent="314" name="time">
+    <column id="359" parent="314" name="time">
       <DataType>datetime|0s</DataType>
       <Position>2</Position>
     </column>
-    <column id="354" parent="315" name="id">
+    <column id="360" parent="315" name="id">
       <DataType>int|0s</DataType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="355" parent="315" name="time">
+    <column id="361" parent="315" name="time">
       <DataType>datetime|0s</DataType>
       <Position>2</Position>
     </column>
-    <column id="356" parent="316" name="id">
+    <column id="362" parent="316" name="id">
       <DataType>int|0s</DataType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="357" parent="316" name="time">
+    <column id="363" parent="316" name="time">
       <DataType>datetime|0s</DataType>
       <Position>2</Position>
     </column>
-    <column id="358" parent="317" name="id">
+    <column id="364" parent="317" name="id">
       <DataType>int|0s</DataType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="359" parent="317" name="time">
+    <column id="365" parent="317" name="name">
+      <DataType>varchar(45)|0s</DataType>
+      <Position>2</Position>
+    </column>
+    <column id="366" parent="317" name="sl">
+      <DataType>decimal(32)|0s</DataType>
+      <Position>3</Position>
+    </column>
+    <column id="367" parent="318" name="orderId">
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="368" parent="318" name="sldm">
+      <DataType>bigint|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+    </column>
+    <column id="369" parent="319" name="id">
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="370" parent="319" name="time">
       <DataType>datetime|0s</DataType>
       <Position>2</Position>
     </column>
-    <column id="360" parent="318" name="price">
+    <column id="371" parent="320" name="id">
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="372" parent="320" name="time">
+      <DataType>datetime|0s</DataType>
+      <Position>2</Position>
+    </column>
+    <column id="373" parent="321" name="id">
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="374" parent="321" name="time">
+      <DataType>datetime|0s</DataType>
+      <Position>2</Position>
+    </column>
+    <column id="375" parent="322" name="id">
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="376" parent="322" name="Total">
+      <DataType>decimal(42)|0s</DataType>
+      <Position>2</Position>
+    </column>
+    <column id="377" parent="323" name="price">
       <DataType>int|0s</DataType>
       <Position>1</Position>
     </column>
